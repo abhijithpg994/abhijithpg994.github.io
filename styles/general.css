@@ -1,0 +1,30 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+}
+
+body {
+    padding-bottom: 1000px;
+
+    background-color: var(--bg-color);
+    font-family: Roboto, Arial;
+    color: var(--text-color);
+}
+
+header {
+    position: relative;
+}
+
+.dark-mode-toggle-container {
+    position: absolute;
+    right: 0;
+}
+
+#darkmode-toggle {
+    /* opacity: 0; */
+}
