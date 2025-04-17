@@ -1,24 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Roboto, Arial;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
-    overflow: hidden;
-    position: relative;
-}
-
 /* Nature-style SVG background (light mode) */
 body::before {
     content: "";
@@ -33,91 +12,19 @@ body::before {
     opacity: 0.4;
 }
 
-main {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 60px 40px;
-    width: 90%;
-    max-width: 500px;
-    height: auto;
-    min-height: 300px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-
-main h1 {
+.getstarted-main h1 {
     margin-bottom: 16px;
     font-size: 90px;
 }
 
-main p {
+.getstarted-main p {
     font-size: 15px;
     color: inherit;
     margin-bottom: 24px;
     line-height: 1.4;
 }
 
-main button {
-  background: transparent;
-  border: 1px solid #888;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-main button:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Theme toggle button */
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.theme-toggle button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #eee;
-}
-
-body.dark-mode main {
-  background-color: #1e1e1e;
-  border-color: #333;
-  box-shadow: 0 12px 32px rgba(255, 255, 255, 0.07);
-}
-
-body.dark-mode main button {
-  border-color: #ccc;
-  color: #eee;
-}
-
-body.dark-mode main button:hover {
-  background-color: #f1f1f1;
-  color: #121212;
-}
-
-
-
-main {
+.getstarted-main {
     animation: fadeIn 0.5s ease-in-out both;
 }
 
@@ -135,4 +42,65 @@ main {
 body.dark-mode {
     background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
     color: #eee;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  main h1 {
+    font-size: 72px;
+  }
+
+  main {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 40px 24px;
+  }
+
+  main h1 {
+    font-size: 56px;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+
+  main button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    box-shadow: none;
+    padding: 32px 16px;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main p {
+    font-size: 13px;
+  }
+
+  main button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .theme-toggle {
+    top: 12px;
+    right: 12px;
+  }
+
+  .theme-toggle button {
+    font-size: 20px;
+  }
 }

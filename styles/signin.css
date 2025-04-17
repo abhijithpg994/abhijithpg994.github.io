@@ -1,0 +1,24 @@
+.login-form-container {
+    width: 100%;
+    padding: 5%;
+}
+
+p.error {
+    display: inline-block;
+    color: red;
+}
+
+.form-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* .form-credentials #email::placeholder {
+    font-weight:lighter;
+} */
+
+form button {
+    margin-top: 24px;
+    width: 100%;
+}

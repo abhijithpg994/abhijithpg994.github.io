@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/signin.css">
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/signin.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙</button>
+    </div>
+    <main class="login-main">
+        <div>
+            <h1>Log In</h1>
+        </div>
+        <div class="login-form-container">
+            <form id="signin-form" method="post">
+                <div class="form-credentials">
+                    <input type="text" name="email" id="email" placeholder="User Name / Email">
+                    <p class="error error-username"></p>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                    <p class="error error-password"></p>
+                </div>
+                <div>
+                    <button type="submit">Log in</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
