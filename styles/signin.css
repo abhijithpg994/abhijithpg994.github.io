@@ -1,6 +1,8 @@
-.login-form-container {
+.login-form-container,
+.signup-form-container {
     width: 100%;
     padding: 5%;
+    transition: all 0.3s ease;
 }
 
 p.error {
@@ -20,5 +22,30 @@ p.error {
 
 form button {
     margin-top: 24px;
+    width: 100%;
+}
+
+.login-form-container.hidden,
+.signup-form-container.hidden {
+    display: none;
+}
+
+.login-form-container.active,
+.signup-form-container.active {
+    display: block;
+}
+
+.signup-date-of-birth-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#gender,
+#signup-email,
+#signup-phone,
+.new-pass,
+.confirm-pass {
+    display: block;
     width: 100%;
 }

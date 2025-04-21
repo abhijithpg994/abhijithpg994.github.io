@@ -2,7 +2,7 @@ const users = { 'abhijith': 'das', 'anas': 'anas' }
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    document.getElementById('signin-form').addEventListener('submit', (e) => {
+    document.getElementById('login-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const email = document.getElementById('email').value;
         const pass = document.getElementById('pass').value;
@@ -22,5 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
             error_pass.textContent = "Password is incorrect.";
         }
 
-    })
+    });
+
+    const formTitle = document.querySelector('.form-title');
+    const signUpFormContainer = document.querySelector('.signup-form-container');
+    const logInFormContainer = document.querySelector('.login-form-container');
+
+    document.querySelector('.signup-btn').addEventListener('click', () => {
+        signUpFormContainer.classList.remove('hidden');
+        logInFormContainer.classList.add('hidden');
+        formTitle.textContent = "Sign Up"
+    });
+
+    document.querySelector('.login-btn').addEventListener('click', () => {
+        logInFormContainer.classList.remove('hidden');
+        signUpFormContainer.classList.add('hidden');
+        formTitle.textContent = "Log In";
+    });
 });
