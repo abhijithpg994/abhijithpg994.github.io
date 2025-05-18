@@ -14,6 +14,12 @@ p.error {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+   input {
+    border-radius: 8px; /* You can adjust this value */
+    padding: 10px;       /* Optional: improves appearance */
+    border: 1px solid #ccc;
+   }
 }
 
 /* .form-credentials #email::placeholder {
