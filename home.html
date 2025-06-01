@@ -5,14 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Circle</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/components/theme-toggle.css">
+    <link rel="stylesheet" href="styles/pages/chat.css">
+
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/chat.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main">
+    <div class="theme-toggle">
+        <button class="theme-toggle-btn" id="toggleTheme">🌙</button>
+    </div>
+    <header class="home-header">
+        <div class="left-section">
+            <h1>Home</h1>
+        </div>
+        <div class="right-section">
+            <button class="search-btn" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" stroke-width="2" fill="none" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke-width="2" />
+                </svg>
+            </button>
+
+        </div>
+    </header>
+    <main class="main home-main">
         <div class="greeting">
             <strong>Welcome</strong>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

@@ -4,18 +4,18 @@ body.dark-mode {
     color: #eee;
 }
 
-body.dark-mode main {
+body.dark-mode .main {
     background-color: #1e1e1e;
     border-color: #333;
     box-shadow: 0 12px 32px rgba(255, 255, 255, 0.07);
 }
 
-body.dark-mode main button {
+body.dark-mode .main button {
     border-color: #ccc;
     color: #eee;
 }
 
-body.dark-mode main button:hover {
+body.dark-mode .main button:hover {
     background-color: #f1f1f1;
     color: #121212;
 }
